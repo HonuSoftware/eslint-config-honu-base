@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "prepublish": "not-in-install && (eslint-find-rules --unused && npm run --silent lint) || in-install"
+    "check-rules": "not-in-install && (eslint-find-rules --unused && npm run --silent lint) || in-install"
   },
   "author": "Caleb G. Morris <caleb.morris.g@gmail.com>",
   "repository" : {
