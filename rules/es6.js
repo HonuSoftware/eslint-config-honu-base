@@ -87,7 +87,7 @@ module.exports = {
     'rest-spread-spacing': [2, 'never'],
 
     //enforce sorted import declarations within modules
-    'sort-imports': [1, {
+    'sort-imports': [0, {
         'ignoreCase': false,
         'ignoreMemberSort': true,
         'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single'],
