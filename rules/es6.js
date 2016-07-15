@@ -89,7 +89,7 @@ module.exports = {
     //enforce sorted import declarations within modules
     'sort-imports': [1, {
         'ignoreCase': false,
-        'ignoreMemberSort': false,
+        'ignoreMemberSort': true,
         'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single'],
     }],
 
