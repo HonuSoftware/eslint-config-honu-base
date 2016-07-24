@@ -8,14 +8,15 @@
     "check-rules": "not-in-install && (eslint-find-rules --unused && npm run --silent lint) || in-install"
   },
   "author": "Caleb G. Morris <caleb.morris.g@gmail.com>",
-  "repository" : {
-    "type" : "git",
-    "url" : "git@gitlab.com:CalebMorris/eslint-config-honu-base.git"
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:CalebMorris/eslint-config-honu-base.git"
   },
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^3.0.1",
     "eslint-find-rules": "^1.11.0",
+    "eslint-plugin-react": "^5.2.2",
     "in-publish": "^2.0.0"
   },
   "peerDependencies": {
