@@ -1,10 +1,12 @@
-import ESLintCodeReview from 'eslint-code-review';
-import { expect } from 'chai';
+/* eslint-disable no-var, prefer-arrow-callback */
 
-import config from '../rules/es6';
+var ESLintCodeReview = require('eslint-code-review').default;
+var expect = require('chai').expect;
 
-describe('arrow-body-style', () => {
-  it('should fail when only returning', () => {
+var config = require('../rules/es6');
+
+describe('arrow-body-style', function() {
+  it('should fail when only returning', function() {
     const code = `
       const failureReturn = () => {
         return 1;
@@ -16,7 +18,7 @@ describe('arrow-body-style', () => {
     expect(messages.ruleMatch('arrow-body-style')).to.equal(true);
   });
 
-  it('should succeed with mapping format', () => {
+  it('should succeed with mapping format', function() {
     const code = `
       const success1 = () => 2;
     `;
@@ -26,7 +28,7 @@ describe('arrow-body-style', () => {
     expect(messages.ruleMatch('arrow-body-style')).to.equal(false);
   });
 
-  it('should succeed with function format', () => {
+  it('should succeed with function format', function() {
     const code = `
       const success2 = () => {
         const testVar = 1;
