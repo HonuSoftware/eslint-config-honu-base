@@ -18,6 +18,7 @@
     "eslint": "^3.0.1",
     "eslint-find-rules": "^1.11.0",
     "eslint-plugin-react": "^5.2.2",
+    "eslint-plugin-import": "^1.14.0",
     "in-publish": "^2.0.0"
   },
   "peerDependencies": {
@@ -26,7 +27,6 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint-code-review": "^0.1.1",
-    "eslint-plugin-import": "^1.14.0",
     "mocha": "^2.5.3"
   }
 }
